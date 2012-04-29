@@ -1,0 +1,16 @@
+<span class="form_heading">Twitter handle form</span></br>
+<div class="main_form">
+<form method="post" action="/summaries/alltweets">
+<div class="textbox_input">
+  <label for="twitter_username"/> Username: </label>
+  <input type="text" id="twitter_username" name="username"/></br>
+</div>
+<div class="checkbox_input">
+Fetch from twitter: <input type="checkbox" name="fetch" value="online" /><br /></br>
+</div>
+<div class="submit_button">
+  <input type="submit" id="submit_button" />
+</div>
+</form>
+</div>
+<%= link_to 'Back', summaries_path %>

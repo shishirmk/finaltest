@@ -1,4 +1,11 @@
 Finaltest::Application.routes.draw do
+  post 'summaries/alltweets'
+  post 'summaries/manualsummary'
+  get 'summaries/showmanual'
+  post 'summaries/showmanual1'
+  post 'summaries/thanks'
+  resources :summaries
+
   resources :users
 
   # The priority is based upon order of creation:
@@ -50,7 +57,7 @@ Finaltest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'users#index'
+  root :to => 'summaries#index'
 
   # See how all your routes lay out with "rake routes"
 

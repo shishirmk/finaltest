@@ -1,0 +1,13 @@
+<div class="form_heading">Choose representative tweets</br>
+<span class="instructions">Please put a check on the tweets you think are representative of all tweets </span></div>
+<br/><br/>
+<form action="/summaries/manualsummary" method="post">
+<input type="hidden" value="<%= @username %>" name="username"/>
+<% i = 1 %>
+<% @tweets.each do |tweet| %>
+  <div class="tweet"> <span class="serial"><%= i%></span><%= check_box_tag 'tweets[]', tweet %> <%= tweet %></div><br/>
+  <% i+= 1 %>
+<% end %>
+</br>
+<input type="submit" id="submit_button"/>
+</form>

@@ -1,0 +1,115 @@
+// Place all the styles related to the summaries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.main_form {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  width: 30%;
+  padding: 5px 5px 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  div {
+    height: 2em;
+    margin-top: 5px;
+  }
+  padding-bottom: 1%;
+  }
+body{
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.form_heading{
+  font-size: 1.5em;
+  .instructions{
+    font-size: 0.7em;
+    font-style: italic;
+  }
+}
+
+.evaluation{
+  float:left;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.0em;
+}
+.heading_class{
+  font-size: 1.2em;
+}
+.temp_class{
+  margin-top: 10px;
+  float:left;
+  margin-left: 140px;
+}
+.second_one{
+  margin-top:10px;
+}
+.third_one{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.all_summaries{
+  .left_pane{
+    width: 40%;
+    float:left;
+    .left_list_heading{
+      width: 100%;
+      font-size: 1.2em;
+      margin-bottom: -10px;
+    }
+    .summaries_list{
+      position: relative;
+      width : 100%;
+      .manual_summary{
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 5px;
+	margin-top: 15px;
+	.tweet{
+	  overflow: auto;
+	  line-height: 1.5em;
+	  padding-left: 4px;
+	  padding-right: 4px;
+	  margin-top: 5px;
+	  background: #D1D1D1;
+	}
+      }
+      bottom-padding: 15px;
+    }
+  }
+  
+  .right_pane{
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    .right_list_heading{
+      postition: relative;
+      width : 100%;
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+    
+    .computed_summary{
+      postition: relative;
+      width : 100%;
+
+      border-style: solid;
+      border-width: 1px;
+      padding-bottom: 5px;
+      .tweet{
+	  overflow:auto;
+	  background: #D1D1D1;
+	  line-height: 1.5em;
+	  padding-left: 4px;
+	  padding-right: 4px;
+	  margin-top:5px;
+      }
+    }
+  }
+}

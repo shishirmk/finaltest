@@ -1,7 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
+gem 'twitter'
+gem 'json'
+gem 'stemmer'
+gem 'tf-idf'
+gem 'statsample'
+gem 'redis'
+gem 'stanford-core-nlp'
+gem 'rarff' 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

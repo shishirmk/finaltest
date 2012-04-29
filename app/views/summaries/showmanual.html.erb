@@ -1,0 +1,45 @@
+<div class="form_heading">Evaluation 1</div></br>
+
+<div class="all_summaries">
+  <div class="left_pane">
+    <div class="left_list_heading">Computer Chosen Summary</div>
+    <div class="summaries_list">
+      <div class="manual_summary">
+      <% @computed_tweets.each do |t| %>
+	      <div class="tweet"><%=t.force_encoding('UTF-8') %></div>
+      <%end%>
+      </div>
+    </div>
+   </div>
+  
+  <div class="right_pane">
+    <div class="right_list_heading">User Chosen Tweets</div>
+      <div class="computed_summary">
+      <% @all_tweets.each do |res| %>
+	<div class="tweet"><%=res.force_encoding('UTF-8') %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="temp_class">
+<div class="heading_class">Evaluation</div>
+<div name="evaluation" id="evaluation" class="evaluation">
+<form method="post" action="showmanual1">
+<div class="first_one">
+  If your summary is considered 5/5 then how much would you rate the summary on left out of 5?<br />
+  <input type="text" id="general_score" name="general_score"/></br>
+</div>
+<div class="second_one">
+  If your topic coverage is considered 5/5 then how much would rate topic coverage of the summary on the left out of 5?<br />
+  <input type="text" id="topic_score" name="topic_score"/></br>
+</div>
+<div class="third_one">
+  What should have been added or removed to make it better?<br />
+  <input type="text" id="comments" name="comments"/>
+</div>
+  <input type="submit" id="evaluation_submit" name="evaluation_submit"/>
+</form>
+</div>
+</div>
+
